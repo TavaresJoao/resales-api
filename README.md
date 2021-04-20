@@ -13,6 +13,13 @@ or
 - psycopg2
 
 ## Run the API
+
+### Setup
+- ensure that postgres is running - if you don't use docker
+- makemigrations - with and without docker: `docker-compose run resalespoc python manage.py makemigrations`; `python manage.py makemigrations`.
+- migrate - with and without docker: `docker-compose run resalespoc python manage.py migrate`; `python manage.py migrate`.
+
+### Run Server
 If docker is installed:
 
 ```bash
